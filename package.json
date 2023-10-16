@@ -1,0 +1,20 @@
+{
+  "name": "shellhacks",
+  "version": "1.0.0",
+  "description": "Website For students to learn things, get help from AI while learning, and keep progress of their learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karthik Yechuri",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

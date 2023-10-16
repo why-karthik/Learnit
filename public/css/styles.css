@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+main {
+    min-height: calc(100vh - 100px); /* Adjust the value as needed */
+    padding-bottom: 50px; /* Adjust the value to ensure space between content and footer */
+}
+
+.footer{
+    text-align: center;
+    padding-top: 2em;
+    height: 5em;
+    width: 100%;
+    color: rgb(208, 212, 216);
+    background-color: rgb(150, 148, 146);
+    position: absolute;
+    bottom: 0;
+}
+
+.footerclass {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+  
+.footer .footer-text{
+    text-align: center;
+    color: rgb(199, 202, 206);
+}
+
+.header{
+    height: 7em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .header-text{
+    text-align: center;
+    color: rgb(199, 202, 206);
+}
+
+.label-text{
+    color: antiquewhite;
+}

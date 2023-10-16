@@ -1,0 +1,28 @@
+<%- include('partials/header', { pageTitle: 'Home - LearnIt!' }); -%>
+<body>
+    <main class="container mt-5">
+    
+        <!-- Display the Welcome message with the user's name -->
+        <h1>Welcome, <%= userFirstName %>!</h1>
+
+        <!-- Display recently added courses -->
+        <h2>Recently Added Courses</h2>
+        
+        <div class="row">
+            <% for (let i = 0; i < courses.length && i < 4; i++) { %>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="/images/<%= courses[i].title + '.jpeg' %>" class="card-img-top" alt="<%= courses[i].name %>">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= courses[i].title.slice(0,100) %>...</h5>
+                            <p class="card-text"><%= courses[i].description %></p>
+                            <a href="/enroll/<%= courses[i]._id %>" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        
+    </main>
+
+    <%- include('partials/footer'); -%>
